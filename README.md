@@ -3,15 +3,15 @@
 
 ## 下载依赖
 ```
-npm install
+yarn install / yarn
 ```
 
 ## 启动开发环境
 ```
-npm run dev / npm start
+yarn run dev / yarn dev / yarn start
 ```
 
 ## 构建生产环境
 ```
-npm run build
+yarn run build
 ```
