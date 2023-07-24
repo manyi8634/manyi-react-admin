@@ -1,7 +1,13 @@
-import Main from '@/views/main'
+import { memo } from 'react'
+import { HashRouter,Routes,Route } from "react-router-dom"
+import Home from '@/layout/Home'
 
-function App() {
-  return (<Main/>)
-}
-
-export default App
+export default memo(function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+      </Routes>
+    </HashRouter>
+  )
+})
