@@ -1,5 +1,10 @@
 @import 'normalize.css'; /* 格式化重置样式 */
 
+*{
+  margin: 0;
+  padding: 0
+}
+
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
