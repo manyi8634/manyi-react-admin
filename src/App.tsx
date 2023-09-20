@@ -1,13 +1,15 @@
-import { memo } from 'react'
-import { HashRouter,Routes,Route } from "react-router-dom"
-import Home from '@/layout/Home'
+import { memo,Suspense } from 'react';
+import { HashRouter as Router } from 'react-router-dom';
+import RouterView from '@/router';
 
 export default memo(function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-      </Routes>
-    </HashRouter>
+    <div id="app">
+      <Router>
+        <Suspense>
+          <RouterView/>
+        </Suspense>
+      </Router>
+    </div>
   )
 })

@@ -2,7 +2,7 @@ import { memo } from 'react'
 
 const Foo = memo(() => {
   return (
-    <div>index</div>
+    <div>Foo</div>
   )
 })
 
