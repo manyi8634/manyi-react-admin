@@ -1,7 +1,7 @@
 import { memo, lazy } from 'react';
 import { useRoutes, Navigate } from "react-router-dom";
 
-const Home = lazy(()=>import('@/layout/Home'));
+const Home = lazy(()=>import('@/layout/home'));
 const Bar = lazy(()=>import('@/views/bar'));
 const Foo = lazy(()=>import('@/views/foo'));
 const NotFound = lazy(()=>import('@/views/notFound'));
