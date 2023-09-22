@@ -1,6 +1,7 @@
 import { memo, lazy } from 'react';
 import { useRoutes, Navigate } from "react-router-dom";
 
+const Login = lazy(()=>import('@/views/login'));
 const Home = lazy(()=>import('@/layout/home'));
 const Bar = lazy(()=>import('@/views/bar'));
 const Foo = lazy(()=>import('@/views/foo'));
@@ -13,8 +14,12 @@ const Router = memo(() => {
       element:  <Navigate to="/home" replace={true} />
     },
     {
+      path: "/login",
+      element:  <Login/>
+    },
+    {
       path: "/home",
-      element: <Home></Home>,
+      element: <Home/>,
       children:[
         {
           path: "",
