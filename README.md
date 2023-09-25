@@ -1,4 +1,4 @@
-# manyi-cli-React-admin
+# manyi-react-admin
 > manyi-cli 创建的React项目,该模板项目还在完善中...
 
 ## 项目环境
